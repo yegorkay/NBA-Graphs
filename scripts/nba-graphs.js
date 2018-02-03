@@ -8,11 +8,13 @@ d3.json("data.json", (data) => {
       }
     }
 
-    let mean = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
-    let low = Math.min(...scores);
-    let high = Math.max(...scores);
-    console.log(`Mean: ${mean}, Low: ${low}, High: ${high}`);
-    // console.log(scores);
+    let mean = d3.mean(scores);
+    let variance = d3.variance(scores);
+    let sd = Math.sqrt(variance);
+
+    let pdf = 1 / Math.sqrt((2 * Math.PI * Math.pow(sd, 2))) * Math.pow(Math.E , - ((Math.pow((22 /*replace 22 with score*/ - mean), 2)) / (2 * Math.pow(sd, 2))));
+
+    console.log(pdf);
 
     d3.select(".container")
       .selectAll("div")
