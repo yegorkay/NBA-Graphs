@@ -42,7 +42,8 @@ d3.json('data.json', (data) => {
     // define the line
     var valueline = d3.line()
     .x((d) => x(d.score))
-    .y((d) => y(d.pdf));
+    .y((d) => y(d.pdf))
+    .curve(d3.curveMonotoneX);
 
     // append the svg obgect to the body of the page
     // appends a 'group' element to 'svg'
