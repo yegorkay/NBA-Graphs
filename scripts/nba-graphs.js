@@ -1,4 +1,4 @@
-d3.json("data.json", (data) => {
+d3.json('data.json', (data) => {
     // data.sort((a, b) => b.points - a.points);
     let scores = [];
     //removing any values that are NaN (aka DNP (Did Not Play))
@@ -8,13 +8,29 @@ d3.json("data.json", (data) => {
       }
     }
 
+    let pdfArray = [];
+
     let mean = d3.mean(scores);
     let variance = d3.variance(scores);
     let sd = Math.sqrt(variance);
 
-    let pdf = 1 / Math.sqrt((2 * Math.PI * Math.pow(sd, 2))) * Math.pow(Math.E , - ((Math.pow((22 /*replace 22 with score*/ - mean), 2)) / (2 * Math.pow(sd, 2))));
+    for (var x = 0; x <= scores.length; x++) {
+      if(isNaN(scores[x]) == false) {
+        pdfArray.push(1 / Math.sqrt((2 * Math.PI * Math.pow(sd, 2))) * Math.pow(Math.E , - ((Math.pow((scores[x] - mean), 2)) / (2 * Math.pow(sd, 2)))));
+      }
+    }
 
-    console.log(pdf);
+    var graphData = [];
+    for (var y = 0; y <= pdfArray.length ; y++) {
+      if(isNaN(pdfArray[y]) == false) {
+        graphData.push({
+          score: scores[y],
+          pdf: pdfArray[y]
+        });
+      }
+    };
+
+    console.log(graphData);
 
     d3.select(".container")
       .selectAll("div")
