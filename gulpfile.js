@@ -16,7 +16,8 @@ var vendorCssFiles = [
     'node_modules/normalize.css/normalize.css'
 ];
 var vendorScriptFiles = [
-    'node_modules/d3/build/d3.js'
+    'node_modules/d3/build/d3.js',
+    'node_modules/d3-axis/build/d3-axis.js'
 ];
 
 gulp.task('vendorStyles', function() {
