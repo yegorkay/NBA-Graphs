@@ -104,3 +104,8 @@ d3.json('data.json', (data) => {
     gpText.innerHTML = `Games Played: ${graphData.length}`;
     meanText.innerHTML = `Mean: ${mean.toFixed(2)} PPG`;
 });
+
+function toggleCurve() {
+  let curve = document.querySelector('.line');
+  curve.style.display === 'none' ? (curve.style.display = 'block') : curve.style.display = 'none';
+}
