@@ -31,7 +31,7 @@ d3.json('data.json', (data) => {
     };
 
     // set the dimensions and margins of the graph
-    let margin = {top: 20, right: 20, bottom: 30, left: 50},
+    let margin = {top: 40, right: 40, bottom: 60, left: 100},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -83,6 +83,21 @@ d3.json('data.json', (data) => {
     // Add the Y Axis
     svg.append('g')
     .call(d3.axisLeft(y));
+
+
+    //Appending axis labels
+    svg.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('Probability Distribution (%)');
+
+    svg.append('text')             
+    .attr('transform', `translate(${width/2}, ${height + margin.top + 20})`)   
+    .style('text-anchor', 'middle')
+    .text('Points Scored In Game');
 
     let gpText = document.querySelector('.gp');
     let meanText = document.querySelector('.mean');

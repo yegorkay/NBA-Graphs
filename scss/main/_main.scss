@@ -10,6 +10,13 @@ p {
     margin: 0 0 16px 0;
 }
 
+//axis labels
+svg g text:nth-child(4), 
+svg g text:nth-child(5) {
+    font-size: 18px;
+    font-style: italic;
+}
+
 .container {
     display: flex;
     justify-content: center;
