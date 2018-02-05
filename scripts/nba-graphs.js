@@ -83,4 +83,9 @@ d3.json('data.json', (data) => {
     // Add the Y Axis
     svg.append('g')
     .call(d3.axisLeft(y));
+
+    let gpText = document.querySelector('.gp');
+    let meanText = document.querySelector('.mean');
+    gpText.innerHTML = `Games Played: ${graphData.length}`;
+    meanText.innerHTML = `Mean: ${mean.toFixed(2)} PPG`;
 });
