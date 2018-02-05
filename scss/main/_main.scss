@@ -1,37 +1,33 @@
-$pink: #E91E63;
+$amaranth: #E91E63;
 $gray: #BDBDBD;
+$mine-shaft: #212121;
+
+body {
+    font-family: lato;
+}
 
 .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    // padding-top: 64px;
-    width: 100%;
-    div {
-        // height: 16px;
-        width: 0px;
-        margin: 2px 0;
-        font-family: lato;
-        color: white;
-        transition: 0.125s ease-in;
-        &:nth-child(even) {
-            background: $pink;
-        }
-        &:nth-child(odd) {
-            background: $gray;
-        }
-    }
-    div:hover {
-        transition: 0.125s ease-in;
-        cursor: pointer;
-        opacity: 0.8;
-        padding: 4px;
-        font-size: 24px;
+    align-items: center;
+    h1 {
+        margin-bottom: 24px;
+        text-transform: capitalize;
     }
 }
 
 path {
 	fill: none;
-    stroke: $pink;
+    stroke: $amaranth;
     stroke-width: 2px;
+}
+
+g[text-anchor="middle"], g[text-anchor="end"] {
+    stroke: none;
+    fill: red;
+    font-size: 16px;
+    .domain {
+        stroke: $mine-shaft;
+    }
 }
