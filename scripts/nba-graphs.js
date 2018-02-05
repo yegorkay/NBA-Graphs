@@ -1,5 +1,5 @@
 d3.json('data.json', (data) => {
-    data.sort((a, b) => b.points - a.points);
+    data.sort((a, b) => a.points - b.points);
     let scores = [];
     //removing any values that are NaN (aka DNP (Did Not Play))
     for (let i = 0; i < data.length; i++) {
@@ -61,10 +61,19 @@ d3.json('data.json', (data) => {
     y.domain([0, d3.max(graphData, (d) => d.pdf)]);
 
     // Add the valueline path.
-    svg.append('path')
+    let path = svg.append('path')
     .data([graphData])
     .attr('class', 'line')
     .attr('d', valueline);
+
+    var totalLength = path.node().getTotalLength();
+
+    path
+      .attr('stroke-dasharray', totalLength + ' ' + totalLength)
+      .attr('stroke-dashoffset', totalLength)
+      .transition()
+        .duration(2250)
+        .attr('stroke-dashoffset', 0);
 
     // Add the X Axis
     svg.append('g')
