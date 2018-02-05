@@ -69,7 +69,7 @@ d3.json('data.json', (data) => {
     var totalLength = path.node().getTotalLength();
 
     path
-      .attr('stroke-dasharray', totalLength + ' ' + totalLength)
+      .attr('stroke-dasharray', `${totalLength} ${totalLength}`)
       .attr('stroke-dashoffset', totalLength)
       .transition()
         .duration(2250)
