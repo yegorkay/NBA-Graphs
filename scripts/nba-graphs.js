@@ -1,8 +1,8 @@
 d3.json('data.json', (data) => {
-    data.sort((a, b) => a.points - b.points);
     let scores = [];
-    //removing any values that are NaN (aka DNP (Did Not Play))
+    
     for (let i = 0; i < data.length; i++) {
+      //removing any values that are NaN (aka DNP (Did Not Play))
       if(isNaN(data[i].points) == false) {
         scores.push(parseInt(data[i].points));
       }
@@ -21,6 +21,7 @@ d3.json('data.json', (data) => {
     }
 
     let graphData = [];
+    
     for (let y = 0; y <= pdfArray.length ; y++) {
       if(isNaN(pdfArray[y]) == false) {
         graphData.push({
@@ -29,6 +30,9 @@ d3.json('data.json', (data) => {
         });
       }
     };
+
+    //sort scores low to high
+    graphData.sort((a, b) => a.score - b.score);
 
     // set the dimensions and margins of the graph
     let margin = {top: 40, right: 40, bottom: 60, left: 100},
@@ -53,9 +57,7 @@ d3.json('data.json', (data) => {
     .attr('height', height + margin.top + margin.bottom)
     .append('g')
     .attr('transform', `translate(${margin.left}, ${margin.top})`); 
-
     
-
     // Scale the range of the data
     x.domain([0, d3.max(graphData, (d) => d.score + 10)]);
     y.domain([0, d3.max(graphData, (d) => d.pdf)]);
@@ -83,7 +85,6 @@ d3.json('data.json', (data) => {
     // Add the Y Axis
     svg.append('g')
     .call(d3.axisLeft(y));
-
 
     //Appending axis labels
     svg.append('text')
