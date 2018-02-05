@@ -57,7 +57,7 @@ d3.json('data.json', (data) => {
     
 
     // Scale the range of the data
-    x.domain(d3.extent(graphData, (d) => d.score));
+    x.domain([0, d3.max(graphData, (d) => d.score + 10)]);
     y.domain([0, d3.max(graphData, (d) => d.pdf)]);
 
     // Add the valueline path.
