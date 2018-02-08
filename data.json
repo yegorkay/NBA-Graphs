@@ -1,423 +1,1562 @@
 [
     {
-        "gameNumber": "1",
-        "date": "2016-10-26",
-        "points": "34"
-    },
-    {
-        "gameNumber": "2",
-        "date": "2016-10-28",
-        "points": "26"
-    },
-    {
-        "gameNumber": "3",
-        "date": "2016-10-30",
-        "points": "28"
-    },
-    {
-        "gameNumber": "4",
-        "date": "2016-11-01",
-        "points": "41"
-    },
-    {
-        "gameNumber": "5",
-        "date": "2016-11-02",
-        "points": "30"
-    },
-    {
-        "gameNumber": "6",
-        "date": "2016-11-05",
-        "points": "30"
-    },
-    {
-        "gameNumber": "7",
-        "date": "2016-11-07",
-        "points": "32"
-    },
-    {
-        "gameNumber": "8",
-        "date": "2016-11-09",
-        "points": "24"
-    },
-    {
-        "gameNumber": "9",
-        "date": "2016-11-12",
-        "points": "25"
-    },
-    {
-        "gameNumber": "10",
-        "date": "2016-11-14",
-        "points": "33"
-    },
-    {
-        "gameNumber": "11",
-        "date": "2016-11-16",
-        "points": "13"
-    },
-    {
-        "gameNumber": "12",
-        "date": "2016-11-17",
-        "points": "26"
-    },
-    {
-        "gameNumber": "13",
-        "date": "2016-11-19",
-        "points": "31"
-    },
-    {
-        "gameNumber": "14",
-        "date": "2016-11-21",
-        "points": "28"
-    },
-    {
-        "gameNumber": "15",
-        "date": "2016-11-23",
-        "points": "29"
-    },
-    {
-        "gameNumber": "16",
-        "date": "2016-11-25",
-        "points": "23"
-    },
-    {
-        "gameNumber": "17",
-        "date": "2016-11-27",
-        "points": "38"
-    },
-    {
-        "gameNumber": "18",
-        "date": "2016-11-29",
-        "points": "26"
-    },
-    {
-        "gameNumber": "19",
-        "date": "2016-12-01",
-        "points": "29"
-    },
-    {
-        "gameNumber": "20",
-        "date": "2016-12-02",
-        "points": "20"
-    },
-    {
-        "gameNumber": "Rk"
-    },
-    {
-        "gameNumber": "21",
-        "date": "2016-12-05",
-        "points": "37"
-    },
-    {
-        "gameNumber": "22",
-        "date": "2016-12-07",
-        "points": "25"
-    },
-    {
-        "gameNumber": "23",
-        "date": "2016-12-09",
-        "points": "21"
-    },
-    {
-        "gameNumber": "24",
-        "date": "2016-12-10",
-        "points": "18"
-    },
-    {
-        "gameNumber": "25",
-        "date": "2016-12-12",
-        "points": "36"
-    },
-    {
-        "gameNumber": "26",
-        "date": "2016-12-14",
-        "points": "15"
-    },
-    {
-        "gameNumber": "27",
-        "date": "2016-12-16",
-        "points": "29"
-    },
-    {
-        "gameNumber": "28",
-        "date": "2016-12-17",
-        "points": "28"
-    },
-    {
-        "gameNumber": "29",
-        "date": "2016-12-20",
-        "points": "31"
-    },
-    {
-        "gameNumber": "30",
-        "date": "2016-12-21",
-        "points": "27"
-    },
-    {
-        "gameNumber": "31",
-        "date": "2016-12-23",
-        "points": "16"
-    },
-    {
-        "gameNumber": "32",
-        "date": "2016-12-26",
-        "points": "32"
-    },
-    {
-        "gameNumber": "33",
-        "date": "2016-12-27",
-        "points": "34"
-    },
-    {
-        "gameNumber": "34",
-        "date": "2016-12-30",
-        "points": "30"
-    },
-    {
-        "gameNumber": "35",
-        "date": "2016-12-31",
-        "points": "53"
-    },
-    {
-        "gameNumber": "36",
-        "date": "2017-01-02",
-        "points": "23"
-    },
-    {
-        "gameNumber": "37",
-        "date": "2017-01-05",
-        "points": "26"
-    },
-    {
-        "gameNumber": "38",
-        "date": "2017-01-06",
-        "points": "14"
-    },
-    {
-        "gameNumber": "39",
-        "date": "2017-01-08",
-        "points": "40"
-    },
-    {
-        "gameNumber": "40",
-        "date": "2017-01-10",
-        "points": "40"
-    },
-    {
-        "gameNumber": "Rk"
-    },
-    {
-        "gameNumber": "41",
-        "date": "2017-01-11",
-        "points": "33"
-    },
-    {
-        "gameNumber": "42",
-        "date": "2017-01-13",
-        "points": "27"
-    },
-    {
-        "gameNumber": "43",
-        "date": "2017-01-15",
-        "points": "22"
-    },
-    {
-        "gameNumber": "44",
-        "date": "2017-01-17",
-        "points": "40"
-    },
-    {
-        "gameNumber": "45",
-        "date": "2017-01-18",
-        "points": "38"
-    },
-    {
-        "gameNumber": "46",
-        "date": "2017-01-20",
-        "points": "17"
-    },
-    {
-        "gameNumber": "47",
-        "date": "2017-01-21",
-        "points": "29"
-    },
-    {
-        "gameNumber": "48",
-        "date": "2017-01-23",
-        "points": "26"
-    },
-    {
-        "gameNumber": "49",
-        "date": "2017-01-25",
-        "points": "30"
-    },
-    {
-        "gameNumber": "50",
-        "date": "2017-01-27",
-        "points": "51"
-    },
-    {
-        "gameNumber": "51",
-        "date": "2017-01-29",
-        "points": "15"
-    },
-    {
-        "gameNumber": "52",
-        "date": "2017-01-31",
-        "points": "10"
-    },
-    {
-        "gameNumber": "53",
-        "date": "2017-02-02",
-        "points": "41"
-    },
-    {
-        "gameNumber": "54",
-        "date": "2017-02-03",
-        "points": "42"
-    },
-    {
-        "gameNumber": "55",
-        "date": "2017-02-07",
-        "points": "25"
-    },
-    {
-        "gameNumber": "56",
-        "date": "2017-02-09",
-        "points": "30"
-    },
-    {
-        "gameNumber": "57",
-        "date": "2017-02-11",
-        "points": "40"
-    },
-    {
-        "gameNumber": "58",
-        "date": "2017-02-15",
-        "points": "38"
-    },
-    {
-        "gameNumber": "59",
-        "date": "2017-02-23",
-        "points": "13"
-    },
-    {
-        "gameNumber": "60",
-        "date": "2017-02-25",
-        "points": "24"
-    },
-    {
-        "gameNumber": "Rk"
-    },
-    {
-        "gameNumber": "61",
-        "date": "2017-02-27",
-        "points": "25"
-    },
-    {
-        "gameNumber": "62",
-        "date": "2017-03-01",
-        "points": "26"
-    },
-    {
-        "gameNumber": "63",
-        "date": "2017-03-04",
-        "points": "33"
-    },
-    {
-        "gameNumber": "64",
-        "date": "2017-03-06",
-        "points": "39"
-    },
-    {
-        "gameNumber": "65",
-        "date": "2017-03-08",
-        "points": "35"
-    },
-    {
-        "gameNumber": "66",
-        "date": "2017-03-10",
-        "points": "19"
-    },
-    {
-        "gameNumber": "67",
-        "date": "2017-03-12",
-        "points": "38"
-    },
-    {
-        "gameNumber": "68",
-        "date": "2017-03-15",
-        "points": "18"
-    },
-    {
-        "gameNumber": "69",
-        "date": "2017-03-17",
-        "points": "41"
-    },
-    {
-        "gameNumber": "70",
-        "date": "2017-03-18",
-        "points": "40"
-    },
-    {
-        "gameNumber": "71",
-        "date": "2017-03-20",
-        "points": "39"
-    },
-    {
-        "gameNumber": "72",
-        "date": "2017-03-24",
-        "points": "38"
-    },
-    {
-        "gameNumber": "73",
-        "date": "2017-03-26",
-        "points": "22"
-    },
-    {
-        "gameNumber": "74",
-        "date": "2017-03-28",
-        "points": "24"
-    },
-    {
-        "gameNumber": "75",
-        "date": "2017-03-30",
-        "points": "30"
-    },
-    {
-        "gameNumber": "76",
-        "date": "2017-03-31",
-        "points": "17"
-    },
-    {
-        "gameNumber": "77",
-        "date": "2017-04-02"
-    },
-    {
-        "gameNumber": "78",
-        "date": "2017-04-05",
-        "points": "31"
-    },
-    {
-        "gameNumber": "79",
-        "date": "2017-04-07",
-        "points": "33"
-    },
-    {
-        "gameNumber": "80",
-        "date": "2017-04-09",
-        "points": "35"
-    },
-    {
-        "gameNumber": "Rk"
-    },
-    {
-        "gameNumber": "81",
-        "date": "2017-04-10",
-        "points": "14"
-    },
-    {
-        "gameNumber": "82",
-        "date": "2017-04-12",
-        "points": "27"
+        "player": "Stephen Curry",
+        "data": [
+            {
+                "points": "22"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "37"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "22"
+            },
+            "142017-11-1329-244GSWORLW (+10)Inactive",
+            {
+                "points": "9"
+            },
+            {
+                "points": "35"
+            },
+            {
+                "points": "39"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "27"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            "212017-11-2729-258GSWSACL (-4)Inactive",
+            {
+                "points": "28"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "31"
+            },
+            "262017-12-0629-267GSW@CHOW (+14)Inactive",
+            "272017-12-0829-269GSW@DETW (+4)Inactive",
+            "282017-12-1129-272GSWPORW (+7)Inactive",
+            "292017-12-1429-275GSWDALW (+15)Inactive",
+            "302017-12-1829-279GSW@LALW (+2)Inactive",
+            "312017-12-2029-281GSWMEMW (+13)Inactive",
+            "322017-12-2229-283GSWLALW (+7)Inactive",
+            "332017-12-2329-284GSWDENL (-15)Inactive",
+            "342017-12-2529-286GSWCLEW (+7)Inactive",
+            "352017-12-2729-288GSWUTAW (+25)Inactive",
+            "362017-12-2929-290GSWCHOL (-11)Inactive",
+            {
+                "points": "38"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "45"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "32"
+            },
+            "422018-01-1029-302GSWLACL (-19)Inactive",
+            "432018-01-1229-304GSW@MILW (+14)Inactive",
+            {
+                "points": "24"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "49"
+            },
+            {
+                "points": "14"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "24"
+            }
+        ]
+    },
+    {
+        "player": "James Harden",
+        "data": [
+            {
+                "points": "27"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "56"
+            },
+            {
+                "points": "35"
+            },
+            {
+                "points": "38"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "38"
+            },
+            {
+                "points": "48"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "37"
+            },
+            {
+                "points": "37"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "29"
+            },
+            {
+                "points": "36"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "48"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "51"
+            },
+            {
+                "points": "51"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "34"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "40"
+            },
+            "362018-01-0328-130HOU@ORLW (+18)Inactive",
+            "372018-01-0428-131HOUGSWL (-10)Inactive",
+            "382018-01-0628-133HOU@DETL (-7)Inactive",
+            "392018-01-0828-135HOU@CHIW (+9)Inactive",
+            "402018-01-1028-137HOUPORW (+9)Inactive",
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            "412018-01-1228-139HOU@PHOW (+17)Did Not Play",
+            "422018-01-1528-142HOU@LACL (-11)Did Not Play",
+            {
+                "points": "10"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "60"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "16"
+            }
+        ]
+    },
+    {
+        "player": "Giannis Antetokounmpo",
+        "data": [
+            {
+                "points": "37"
+            },
+            {
+                "points": "34"
+            },
+            {
+                "points": "44"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "14"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "40"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "23"
+            },
+            "172017-11-2222-351MIL@PHOW (+6)Did Not Dress",
+            {
+                "points": "27"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "20"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "33"
+            },
+            {
+                "points": "40"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "37"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "26"
+            },
+            "312017-12-2323-017MIL@CHOL (-5)Inactive",
+            {
+                "points": "28"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "34"
+            },
+            {
+                "points": "17"
+            },
+            {
+                "points": "26"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "23"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "22"
+            },
+            "452018-01-2023-045MIL@PHIL (-22)Inactive",
+            "462018-01-2223-047MILPHOW (+4)Inactive",
+            {
+                "points": "41"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "17"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "16"
+            }
+        ]
+    },
+    {
+        "player": "LeBron James",
+        "data": [
+            {
+                "points": "29"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "34"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "57"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "39"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "30"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "21"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "34"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "39"
+            },
+            {
+                "points": "34"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "10"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "26"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "11"
+            }
+        ]
+    },
+    {
+        "player": "Kevin Durant",
+        "data": [
+            {
+                "points": "20"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "21"
+            },
+            "122017-11-0829-040GSWMINW (+24)Inactive",
+            {
+                "points": "29"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "27"
+            },
+            "172017-11-1929-051GSW@BRKW (+7)Inactive",
+            {
+                "points": "21"
+            },
+            "192017-11-2429-056GSWCHIW (+49)Inactive",
+            "202017-11-2529-057GSWNOPW (+15)Inactive",
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            "212017-11-2729-059GSWSACL (-4)Inactive",
+            {
+                "points": "29"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "35"
+            },
+            {
+                "points": "36"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "36"
+            },
+            {
+                "points": "36"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "25"
+            },
+            "392018-01-0429-097GSW@HOUW (+10)Inactive",
+            "402018-01-0629-099GSW@LACW (+16)Inactive",
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            "412018-01-0829-101GSWDENW (+10)Inactive",
+            {
+                "points": "40"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "14"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "17"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "31"
+            }
+        ]
+    },
+    {
+        "player": "DeMar DeRozan",
+        "data": [
+            {
+                "points": "11"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "10"
+            },
+            {
+                "points": "37"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "13"
+            },
+            {
+                "points": "2"
+            },
+            {
+                "points": "30"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "26"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "17"
+            },
+            {
+                "points": "37"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "45"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "8"
+            },
+            {
+                "points": "15"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "52"
+            },
+            {
+                "points": "35"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "35"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "13"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "42"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "17"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "14"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "35"
+            },
+            {
+                "points": "13"
+            }
+        ]
+    },
+    {
+        "player": "Karl-Anthony Towns",
+        "data": [
+            {
+                "points": "18"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "2"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "17"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "15"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "32"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "20"
+            },
+            {
+                "points": "11"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "15"
+            },
+            {
+                "points": "7"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "14"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "25"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "21"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "15"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "11"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "15"
+            },
+            {
+                "points": "11"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "22"
+            }
+        ]
+    },
+    {
+        "player": "Kyrie Irving",
+        "data": [
+            {
+                "points": "22"
+            },
+            {
+                "points": "17"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "11"
+            },
+            {
+                "points": "35"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "0"
+            },
+            "142017-11-1225-234BOSTORW (+1)Inactive",
+            {
+                "points": "25"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "47"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "30"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "25"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "36"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "36"
+            },
+            {
+                "points": "16"
+            },
+            "292017-12-1125-263BOS@CHIL (-23)Inactive",
+            {
+                "points": "33"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "26"
+            },
+            {
+                "points": "28"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "11"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "27"
+            },
+            "462018-01-1825-301BOSPHIL (-9)Inactive",
+            {
+                "points": "40"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "37"
+            },
+            {
+                "points": "27"
+            },
+            "522018-01-3125-314BOSNYKW (+30)Inactive"
+        ]
+    },
+    {
+        "player": "Anthony Davis",
+        "data": [
+            {
+                "points": "33"
+            },
+            {
+                "points": "35"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "2"
+            },
+            "52017-10-2624-229NOP@SACW (+8)Did Not Play",
+            {
+                "points": "30"
+            },
+            {
+                "points": "39"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "37"
+            },
+            {
+                "points": "18"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "13"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "17"
+            },
+            {
+                "points": "36"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "30"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "17"
+            },
+            {
+                "points": "19"
+            },
+            "232017-12-0224-266NOP@PORW (+7)Did Not Dress",
+            "242017-12-0424-268NOPGSWL (-10)Did Not Dress",
+            "252017-12-0624-270NOPDENW (+9)Did Not Dress",
+            {
+                "points": "18"
+            },
+            {
+                "points": "29"
+            },
+            "282017-12-1124-275NOP@HOUL (-7)Did Not Dress",
+            {
+                "points": "25"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "37"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "17"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "33"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "30"
+            },
+            "402018-01-1024-305NOP@MEML (-3)Did Not Dress",
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "36"
+            },
+            {
+                "points": "48"
+            },
+            {
+                "points": "45"
+            },
+            {
+                "points": "8"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "34"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "43"
+            },
+            {
+                "points": "38"
+            }
+        ]
+    },
+    {
+        "player": "Russell Westbrook",
+        "data": [
+            {
+                "points": "21"
+            },
+            {
+                "points": "6"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "12"
+            },
+            {
+                "points": "12"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "13"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "21"
+            },
+            {
+                "points": "15"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "34"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "28"
+            },
+            {
+                "points": "37"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "15"
+            },
+            {
+                "points": "22"
+            },
+            {
+                "points": "34"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "10"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "38"
+            },
+            {
+                "points": "24"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "27"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "30"
+            },
+            {
+                "points": "40"
+            },
+            {
+                "points": "38"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "29"
+            },
+            {
+                "points": "26"
+            },
+            "\n         Rk\n         G\n         Date\n         Age\n         Tm\n          \n         Opp\n          \n         GS\n         MP\n         FG\n         FGA\n         FG%\n         3P\n         3PA\n         3P%\n         FT\n         FTA\n         FT%\n         ORB\n         DRB\n         TRB\n         AST\n         STL\n         BLK\n         TOV\n         PF\n         PTS\n         GmSc\n         +/-\n      ",
+            {
+                "points": "22"
+            },
+            {
+                "points": "38"
+            },
+            {
+                "points": "25"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "19"
+            },
+            {
+                "points": "23"
+            },
+            {
+                "points": "32"
+            },
+            {
+                "points": "46"
+            },
+            {
+                "points": "31"
+            },
+            {
+                "points": "37"
+            },
+            {
+                "points": "13"
+            },
+            {
+                "points": "20"
+            },
+            {
+                "points": "16"
+            },
+            {
+                "points": "36"
+            }
+        ]
     }
 ]

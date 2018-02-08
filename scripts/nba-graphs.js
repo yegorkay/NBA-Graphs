@@ -1,38 +1,60 @@
-d3.json('data.json', (data) => {
-    let scores = [];
+function returnObj (value) {
+  return typeof value === 'object';
+}
+
+d3.json('data.json', (mvps) => {
+
+    let arrayFilter = [[], [], [], [], [], [], [], [], [], []];
+    let arrayNums = [[], [], [], [], [], [], [], [], [], []];
+
+    for (let i = 0; i < mvps.length; i++) {
+      let filteredMvp = mvps[i].data.filter(returnObj); 
+      arrayFilter[i].push(filteredMvp);
+    }
     
-    for (let i = 0; i < data.length; i++) {
-      //removing any values that are NaN (aka DNP (Did Not Play))
-      if(isNaN(data[i].points) == false) {
-        scores.push(parseInt(data[i].points));
+    for (let y = 0; y < arrayFilter.length; y++) {
+      for (let x = 0; x < arrayFilter[y][0].length; x++) {
+        arrayNums[y].push(parseInt(arrayFilter[y][0][x].points));
       }
     }
+  
+    function basicStats(index) {
 
-    let pdfArray = [];
+      let player = mvps[index].player;
 
-    let mean = d3.mean(scores);
-    let variance = d3.variance(scores);
-    let sd = Math.sqrt(variance);
+      let mean = d3.mean(arrayNums[index]);
+      let variance = d3.variance(arrayNums[index]);
+      let sd = Math.sqrt(variance);
 
-    for (let x = 0; x <= scores.length; x++) {
-      if(isNaN(scores[x]) == false) {
-        pdfArray.push(1 / Math.sqrt((2 * Math.PI * Math.pow(sd, 2))) * Math.pow(Math.E , - ((Math.pow((scores[x] - mean), 2)) / (2 * Math.pow(sd, 2)))));
-      }
-    }
+      let scores = arrayNums[index];
+      let pdf = arrayNums[index].map((num) => 1 / Math.sqrt((2 * Math.PI * Math.pow(sd, 2))) * Math.pow(Math.E , - ((Math.pow((num - mean), 2)) / (2 * Math.pow(sd, 2)))));
+      
+      let graphData = [];
 
-    let graphData = [];
-    
-    for (let y = 0; y <= pdfArray.length ; y++) {
-      if(isNaN(pdfArray[y]) == false) {
-        graphData.push({
+      for (let y = 0; y < scores.length ; y++) {
+          graphData.push({
           score: scores[y],
-          pdf: pdfArray[y]
+          pdf: pdf[y]
         });
-      }
-    };
+        graphData.sort((a, b) => a.score - b.score);
+      };
+         
+      return {
+        player: player, 
+        mean: mean, 
+        variance: variance, 
+        sd: sd, 
+        plot: graphData
+      };
 
-    //sort scores low to high
-    graphData.sort((a, b) => a.score - b.score);
+    }
+
+    let stats = basicStats(1);
+    // console.log(stats.plot);
+    for (let x = 0; x < 10; x++) {
+      let stats = basicStats(x);
+      console.log(stats);
+    };
 
     // set the dimensions and margins of the graph
     let margin = {top: 40, right: 40, bottom: 60, left: 100},
@@ -59,16 +81,16 @@ d3.json('data.json', (data) => {
     .attr('transform', `translate(${margin.left}, ${margin.top})`); 
     
     // Scale the range of the data
-    x.domain([0, d3.max(graphData, (d) => d.score + 10)]);
-    y.domain([0, d3.max(graphData, (d) => d.pdf)]);
+    x.domain([0, d3.max(stats.plot, (d) => d.score + 10)]);
+    y.domain([0, d3.max(stats.plot, (d) => d.pdf)]);
 
     // Add the valueline path.
     let path = svg.append('path')
-    .data([graphData])
+    .data([stats.plot])
     .attr('class', 'line')
     .attr('d', valueline);
 
-    var totalLength = path.node().getTotalLength();
+    let totalLength = path.node().getTotalLength();
 
     path
       .attr('stroke-dasharray', `${totalLength} ${totalLength}`)
@@ -100,10 +122,15 @@ d3.json('data.json', (data) => {
     .style('text-anchor', 'middle')
     .text('Points Scored In Game');
 
+    let playerTitle = document.querySelector('h1');
+    playerTitle.innerHTML = stats.player;
+
     let gpText = document.querySelector('.gp');
-    let meanText = document.querySelector('.mean');
-    gpText.innerHTML = `Games Played: ${graphData.length}`;
-    meanText.innerHTML = `Mean: ${mean.toFixed(2)} PPG`;
+    gpText.innerHTML = `Games Played: ${stats.plot.length}`;
+
+    let meanText = document.querySelector('.mean');  
+    meanText.innerHTML = `Mean: ${stats.mean.toFixed(1)} PPG`;
+
 });
 
 function toggleCurve() {

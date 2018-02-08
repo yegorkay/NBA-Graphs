@@ -4,14 +4,22 @@ const fs = require("fs");
 let savedData = [];
 
 var url =
-  "https://www.basketball-reference.com/players/h/hardeja01/gamelog/2017/";
+  "https://www.basketball-reference.com/friv/mvp.html";
 osmosis
   .get(url)
   .find("tbody tr")
+  .follow('td[data-stat="player"] @href')
   .set({
-    gameNumber: 'th[data-stat="ranker"]',
-    date: 'td[data-stat="date_game"]',
-    points: 'td[data-stat="pts"]'
+    player: 'h1',
+    data: [
+      osmosis
+      .find('tr.full_table:last-child()')
+      .follow('th.left:first-child() @href')
+      .find("tbody tr")
+      .set({
+        points: 'td[data-stat="pts"]'
+      })
+    ]
   })
   .log(console.log)
   .data(function(data) {
