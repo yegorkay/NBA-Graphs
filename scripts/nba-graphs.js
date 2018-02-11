@@ -13,7 +13,7 @@ d3.json('data.json', (mvps) => {
   let cleanData = [];
 
   let filterResult = mvps.map(a => arrayFilter.push(a.data.filter(returnObj)));
-  
+
   for (let i = 0; i < filterResult.length; i ++) {
 
     let integers = arrayFilter[i].map(b => parseInt(b.points)).sort((a, b) => a - b);
@@ -39,7 +39,14 @@ d3.json('data.json', (mvps) => {
 
   };
 
-  let stats = cleanData[1];
+  let maxScore = [];
+  let maxPdf = [];
+
+  cleanData.forEach((el, pos) =>
+    el.data.forEach((d) => 
+      maxPdf.push(d.pdf) && maxScore.push(d.score)
+    )
+  );
 
   // set the dimensions and margins of the graph
   let margin = {top: 40, right: 40, bottom: 60, left: 100},
@@ -56,6 +63,9 @@ d3.json('data.json', (mvps) => {
   .y((d) => y(d.pdf))
   .curve(d3.curveMonotoneX);
 
+  // Scale the range of the data
+  x.domain([0, Math.max.apply(null, maxScore) + 5]);
+  y.domain([0, Math.max.apply(null, maxPdf) + 0.005]);
   // append the svg obgect to the body of the page
   // appends a 'group' element to 'svg'
   // moves the 'group' element to the top left margin
@@ -65,25 +75,6 @@ d3.json('data.json', (mvps) => {
   .append('g')
   .attr('transform', `translate(${margin.left}, ${margin.top})`); 
   
-  // Scale the range of the data
-  x.domain([0, d3.max(stats.data, (d) => d.score + 10)]);
-  y.domain([0, d3.max(stats.data, (d) => d.pdf)]);
-
-  // Add the valueline path.
-  let path = svg.append('path')
-  .data([stats.data])
-  .attr('class', 'line')
-  .attr('d', valueline);
-
-  let totalLength = path.node().getTotalLength();
-
-  path
-    .attr('stroke-dasharray', `${totalLength} ${totalLength}`)
-    .attr('stroke-dashoffset', totalLength)
-    .transition()
-      .duration(2250)
-      .attr('stroke-dashoffset', 0);
-
   // Add the X Axis
   svg.append('g')
   .attr('transform', `translate(0, ${height})`) 
@@ -107,13 +98,22 @@ d3.json('data.json', (mvps) => {
   .style('text-anchor', 'middle')
   .text('Points Scored In Game');
 
-  let playerTitle = document.querySelector('h1');
-  playerTitle.innerHTML = stats.player;
-
-  let gpText = document.querySelector('.gp');
-  gpText.innerHTML = `Games Played: ${stats.data.length}`;
-
-  let meanText = document.querySelector('.mean');  
-  meanText.innerHTML = `Mean: ${stats.mean.toFixed(1)} PPG`;
+  cleanData.forEach(function(dataset, i) {  
+    // Add the valueline path.
+    let path = svg.append('path')
+    .data([dataset.data])
+    .attr('class', 'line')
+    .attr('d', valueline);
+  
+    let totalLength = path.node().getTotalLength();
+  
+    path
+      .attr('stroke-dasharray', `${totalLength} ${totalLength}`)
+      .attr('stroke-dashoffset', totalLength)
+      .transition()
+        .duration(2250)
+        .attr('stroke-dashoffset', 0)
+        .attr("stroke", () => `hsl(0, 100%, ${Math.random() * 80}%)`);
+  });
 
 });
