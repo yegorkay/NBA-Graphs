@@ -1,20 +1,24 @@
 $amaranth: #E91E63;
 $gray: #BDBDBD;
-$mine-shaft: #212121;
+$cod-gray: #161616;
 
 body {
     font-family: lato;
+    background: $cod-gray;
+    color: white;
 }
 
 p {
     margin: 0 0 16px 0;
 }
 
-//axis labels
-svg g text:nth-child(4), 
-svg g text:nth-child(5) {
-    font-size: 18px;
-    font-style: italic;
+
+.tick {
+    fill: white;
+    line {
+        stroke: white;
+        opacity: 0.5;
+    }
 }
 
 .container {
@@ -22,9 +26,11 @@ svg g text:nth-child(5) {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 48px;
     h1 {
         margin: 24px 0;
         text-transform: capitalize;
+        text-align: center;
     }
 }
 
@@ -34,11 +40,21 @@ path {
     stroke-width: 2.5px;
 }
 
+//test opacity opacity contrast theme
+.line:not(:nth-of-type(7)) {
+    opacity: 0.125;
+}
+
+text {
+    fill: white;
+}
+
 g[text-anchor="middle"], g[text-anchor="end"] {
     stroke: none;
-    fill: red;
+    fill: white;
     font-size: 16px;
     .domain {
-        stroke: $mine-shaft;
+        stroke: white;
+        opacity: 0.25;
     }
 }

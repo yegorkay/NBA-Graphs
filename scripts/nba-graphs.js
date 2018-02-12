@@ -7,15 +7,23 @@ function toggleCurve() {
   curve.style.display === 'none' ? (curve.style.display = 'block') : curve.style.display = 'none';
 }
 
+// NBA Team Colors
+const colors = [
+  '#243E90', '#CE1141', '#243E90', '#FFB81C','#00471B',
+  '#CD1141', '#7AC143', '#B4975A','#008248','#007AC1'
+]
+
 d3.json('data.json', (mvps) => {
 
   let arrayFilter = [];
   let cleanData = [];
 
+  // Node Web Scraper picked up some errouneous string data, so we need to filter the data
   let filterResult = mvps.map(a => arrayFilter.push(a.data.filter(returnObj)));
 
   for (let i = 0; i < filterResult.length; i ++) {
 
+    // Convert point strings to numbers
     let integers = arrayFilter[i].map(b => parseInt(b.points)).sort((a, b) => a - b);
 
     let mean = d3.mean(integers);
@@ -24,11 +32,13 @@ d3.json('data.json', (mvps) => {
 
     let graphData = [];
 
+    // Creating our x and y coordinates for the graph
     integers.forEach((num) => graphData.push({ 
       score: num, 
       pdf: 1 / Math.sqrt((2 * Math.PI * Math.pow(sd, 2))) * Math.pow(Math.E , - ((Math.pow((num - mean), 2)) / (2 * Math.pow(sd, 2))))
     }));
 
+    // Creating our clean array with numbers and relevant statistics
     cleanData.push({
       player: mvps[i].player,
       data: graphData,
@@ -41,7 +51,8 @@ d3.json('data.json', (mvps) => {
 
   let maxScore = [];
   let maxPdf = [];
-
+  
+  // Finding the maximum points scored and maximum PDF (Probability Distribution Function) in the entire data set
   cleanData.forEach((el, pos) =>
     el.data.forEach((d) => 
       maxPdf.push(d.pdf) && maxScore.push(d.score)
@@ -50,8 +61,8 @@ d3.json('data.json', (mvps) => {
 
   // set the dimensions and margins of the graph
   let margin = {top: 40, right: 40, bottom: 60, left: 100},
-  width = 960 - margin.left - margin.right,
-  height = 500 - margin.top - margin.bottom;
+  width = (window.outerWidth * .85) - margin.left - margin.right,
+  height = (window.outerHeight * .85) - margin.top - margin.bottom;
 
   // set the ranges
   let x = d3.scaleLinear().range([0, width]);
@@ -64,8 +75,8 @@ d3.json('data.json', (mvps) => {
   .curve(d3.curveMonotoneX);
 
   // Scale the range of the data
-  x.domain([0, Math.max.apply(null, maxScore) + 5]);
-  y.domain([0, Math.max.apply(null, maxPdf) + 0.005]);
+  x.domain([0, (Math.ceil(Math.max.apply(null, maxScore) / 10) * 10) + 5]);
+  y.domain([0, (Math.ceil(Math.max.apply(null, maxPdf) / .001) * .001) + .005]);
   // append the svg obgect to the body of the page
   // appends a 'group' element to 'svg'
   // moves the 'group' element to the top left margin
@@ -98,7 +109,7 @@ d3.json('data.json', (mvps) => {
   .style('text-anchor', 'middle')
   .text('Points Scored In Game');
 
-  cleanData.forEach(function(dataset, i) {  
+  cleanData.forEach(function(dataset, i) {   
     // Add the valueline path.
     let path = svg.append('path')
     .data([dataset.data])
@@ -111,9 +122,9 @@ d3.json('data.json', (mvps) => {
       .attr('stroke-dasharray', `${totalLength} ${totalLength}`)
       .attr('stroke-dashoffset', totalLength)
       .transition()
-        .duration(2250)
+        .duration(3250)
         .attr('stroke-dashoffset', 0)
-        .attr("stroke", () => `hsl(0, 100%, ${Math.random() * 80}%)`);
+        .attr('stroke', colors[i]);
   });
 
 });
