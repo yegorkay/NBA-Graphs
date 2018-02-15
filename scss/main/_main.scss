@@ -37,12 +37,13 @@ p {
 path {
 	fill: none;
     // stroke: $amaranth;
-    stroke-width: 2.5px;
+    stroke-width: 3px;
 }
 
 //test opacity opacity contrast theme
-.line:not(:nth-of-type(7)) {
-    opacity: 0.125;
+.line:not(:nth-of-type(9)) {
+    opacity: 0.2;
+    stroke-width: 2px;
 }
 
 text {
