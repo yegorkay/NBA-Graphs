@@ -1,7 +1,15 @@
-// NBA Team Colors
+// NBA Team Colors (hsl values)
 const colors = [
-  '#243E90', '#CE1141', '#243E90', '#FFB81C', '#00471B',
-  '#CD1141', '#7AC143', '#B4975A', '#008248', '#007AC1'
+  [226, 60, 35],
+  [345, 85, 44],
+  [226, 60, 35],
+  [41, 100, 56],
+  [143, 100, 14],
+  [345, 85, 44],
+  [94, 50, 51],
+  [41, 38, 53],
+  [153, 100, 26],
+  [202, 100, 38]
 ];
 
 let cleanData = [];
@@ -9,20 +17,20 @@ let arrayFilter = [];
 let maxScore = [];
 let maxPdf = [];
 
-const returnObj = (value) => typeof value === 'object';
+const returnObj = value => typeof value === 'object';
 
-const filterResult = (json) =>
+const filterResult = json =>
   json.map(a => arrayFilter.push(a.data.filter(returnObj)));
 
-const stringToNumber = (string) =>
+const stringToNumber = string =>
   string.map(b => parseInt(b.points)).sort((a, b) => a - b);
 
-const returnMax = (arr) =>
+const returnMax = arr =>
   arr.forEach((el, pos) =>
     el.data.forEach(d => maxPdf.push(d.pdf) && maxScore.push(d.score))
   );
 
-const manageInfo = (info) => {
+const manageInfo = info => {
   // Node Web Scraper picked up some errouneous string data, so we need to filter the data
   let filteredArray = filterResult(info);
 
@@ -53,18 +61,18 @@ const manageInfo = (info) => {
     });
   });
 };
+// set the dimensions and margins of the graph
+let margin = { top: 40, right: 40, bottom: 60, left: 100 },
+  width = window.outerWidth * 0.85 - margin.left - margin.right,
+  height = window.outerHeight * 0.85 - margin.top - margin.bottom;
 
-d3.json('data.json', (mvps) => {
+// set the ranges
+let x = d3.scaleLinear().range([0, width]);
+let y = d3.scaleLinear().range([height, 0]);
+
+d3.json('data.json', mvps => {
   manageInfo(mvps);
   returnMax(cleanData);
-  // set the dimensions and margins of the graph
-  let margin = { top: 40, right: 40, bottom: 60, left: 100 },
-    width = window.outerWidth * 0.85 - margin.left - margin.right,
-    height = window.outerHeight * 0.85 - margin.top - margin.bottom;
-
-  // set the ranges
-  let x = d3.scaleLinear().range([0, width]);
-  let y = d3.scaleLinear().range([height, 0]);
 
   // define the line
   let valueline = d3
@@ -75,7 +83,10 @@ d3.json('data.json', (mvps) => {
 
   // Scale the range of the data
   x.domain([0, Math.ceil(Math.max.apply(null, maxScore) / 10) * 10 + 5]);
-  y.domain([0, Math.ceil(Math.max.apply(null, maxPdf) / 0.001) * 0.001 + 0.005]);
+  y.domain([
+    0,
+    Math.ceil(Math.max.apply(null, maxPdf) / 0.001) * 0.001 + 0.005
+  ]);
   // append the svg obgect to the body of the page
   let svg = d3
     .select('.container')
@@ -111,6 +122,20 @@ d3.json('data.json', (mvps) => {
     .text('Points Scored In Game');
 
   cleanData.forEach((dataset, i) => {
+    // console.log(deg, sat, light)
+    d3
+      .select('.legend')
+      .append('div')
+      .classed('legend__player', true)
+      .style(
+        'background',
+        `linear-gradient(141deg, hsl(${colors[i][0]}, ${colors[i][1]}%, 
+          ${colors[i][2]}%) 0%, hsl(${colors[i][0] - 10}, ${colors[i][1] - 5}%, 
+          ${colors[i][2] - 6}%) 51%, hsl(${colors[i][0] - 10}, 
+          ${colors[i][1] - 10}%, ${colors[i][2] - 10}%) 75%)`
+      )
+      .append('p')
+      .text([dataset.player]);
     // Add the valueline path.
     let path = svg
       .append('path')
@@ -126,6 +151,9 @@ d3.json('data.json', (mvps) => {
       .transition()
       .duration(3250)
       .attr('stroke-dashoffset', 0)
-      .attr('stroke', colors[i]);
+      .attr(
+        'stroke',
+        `hsl(${colors[i][0]}, ${colors[i][1]}%, ${colors[i][2]}%)`
+      );
   });
 });

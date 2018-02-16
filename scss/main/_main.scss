@@ -8,9 +8,9 @@ body {
     color: white;
 }
 
-p {
-    margin: 0 0 16px 0;
-}
+// p {
+//     margin: 0 0 16px 0;
+// }
 
 
 .tick {
@@ -41,7 +41,7 @@ path {
 }
 
 //test opacity opacity contrast theme
-.line:not(:nth-of-type(9)) {
+.line:not(:nth-of-type(7)) {
     opacity: 0.2;
     stroke-width: 2px;
 }
@@ -57,5 +57,35 @@ g[text-anchor="middle"], g[text-anchor="end"] {
     .domain {
         stroke: white;
         opacity: 0.25;
+    }
+}
+
+
+@supports(display: grid) {
+    .legend {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 8px;
+    }
+}
+
+.legend {
+    padding: 36px 0;
+    p {
+        text-align: center;
+        padding: 0 16px;
+    }
+}
+
+.legend__player {
+    border-radius: 4px;
+    transition: 0.125s;
+    &:hover {
+        cursor: pointer;
+        transition: 0.125s;
+        transform: scale(0.95);
+    }
+    &:not(:nth-of-type(7)) {
+        opacity: 0.6;
     }
 }
