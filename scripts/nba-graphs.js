@@ -32,9 +32,8 @@ const returnMax = arr =>
 
 const manageInfo = info => {
   // Node Web Scraper picked up some errouneous string data, so we need to filter the data
-  let filteredArray = filterResult(info);
 
-  filteredArray.forEach((el, i) => {
+  filterResult(info).forEach((el, i) => {
     let integers = stringToNumber(arrayFilter[i]);
     let mean = d3.mean(integers);
     let variance = d3.variance(integers);
@@ -83,10 +82,7 @@ d3.json('data.json', mvps => {
 
   // Scale the range of the data
   x.domain([0, Math.ceil(Math.max.apply(null, maxScore) / 10) * 10 + 5]);
-  y.domain([
-    0,
-    Math.ceil(Math.max.apply(null, maxPdf) / 0.001) * 0.001 + 0.005
-  ]);
+  y.domain([0, Math.ceil(Math.max.apply(null, maxPdf) / 0.001) * 0.001 + 0.005]);
   // append the svg obgect to the body of the page
   let svg = d3
     .select('.container')
@@ -129,7 +125,7 @@ d3.json('data.json', mvps => {
       .classed('legend__player', true)
       .style(
         'background',
-        `linear-gradient(141deg, hsl(${colors[i][0]}, ${colors[i][1]}%, 
+        `linear-gradient(90deg, hsl(${colors[i][0]}, ${colors[i][1]}%, 
           ${colors[i][2]}%) 0%, hsl(${colors[i][0] - 10}, ${colors[i][1] - 5}%, 
           ${colors[i][2] - 6}%) 51%, hsl(${colors[i][0] - 10}, 
           ${colors[i][1] - 10}%, ${colors[i][2] - 10}%) 75%)`
@@ -157,3 +153,17 @@ d3.json('data.json', mvps => {
       );
   });
 });
+
+let toggleVisible = () => {
+  document.querySelectorAll(".legend__player").forEach((e, i) => e.addEventListener("click", () => {
+    let line = document.querySelectorAll('.line')
+    e.style.opacity = "1";
+    e.className += ' none';
+    line[i].style.opacity = "1";
+    }
+  ))   
+}
+
+setTimeout(() => {
+  toggleVisible()
+}, 50);
